@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Asignacion 1</title>
+    <style>
+        body {
+            background-color: #CCB1E0;
+        }
+        h1 {
+            text-align: center;
+            font-size: bold;
+            text-decoration: underline wavy #A34CE6 6px;
+            color: #584D61;
+            font-size: 50px;
+        }
+        button {
+            margin: 200px;
+            background-color: #A34CE6;
+            color: white;
+            padding: 12px;
+            border: #584D61 2px solid;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        button:hover {
+            box-shadow: 2px 2px 90px 27px rgba(87,71,99,1);
+-webkit-box-shadow: 2px 2px 90px 27px rgba(87,71,99,1);
+-moz-box-shadow: 2px 2px 90px 27px rgba(87,71,99,1);
+cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lectura de datos</h1>
+    <button type="button" onclick="ejercicio1()">Ejercicio 1</button>
+    <button type="button" onclick="ejercicio2()">Ejercicio 2</button>
+    <button type="button" onclick="ejercicio3()">Ejercicio 3</button>
+    <script>
+        function ejercicio1() {
+            var num1, num2, suma, resta, multiplicacion, division;
+        num1 = parseInt(prompt("Digite el primer numero:"));
+        num2 = parseInt(prompt("Digite el segundo numero:"));
+        suma = num1 + num2;
+        alert("El resultado de la suma es " + suma);
+        resta = num1 - num2;
+        alert("El resultado de la resta es " + resta);
+        multiplicacion = num1 * num2;
+        alert("El resultado de la multiplicacion " + multiplicacion);
+        division = num1 / num2;
+        alert("El resultado de la division es: " + division);
+        }
+        function ejercicio2() {
+            var nombre, edad, direccion, correo, telefono, info;
+            nombre = prompt("Digite su nombre:");
+            edad = prompt("Digite su edad:");
+            direccion = prompt("Digite su direccion:");
+            correo = prompt("Digite su correo:");
+            telefono = prompt("Digite su telefono:");
+            info = nombre + edad + direccion + correo + telefono;
+            alert("Mi nombre es: " + nombre + ", tengo " + edad+ "años, vivo en " + direccion + " mi correo es " + correo + " y mi telefono es " + telefono);
+        }
+        function ejercicio3() {
+            var producto, cantidad, precio, totalCompra;
+            producto = prompt("Digite el nombre del producto:");
+            cantidad = parseInt(prompt("Digite la cantidad de producto:"));
+            precio = parseInt(prompt("Digite el precio del producto"));
+            totalCompra = cantidad * precio;
+            alert(cantidad + " unidades " + "del producto " + producto + " con un precio unitario de ₡" + precio + ". Nos da un total a pagar de: ₡" + totalCompra);
+        }
+    </script>
+</body>
+</html>
